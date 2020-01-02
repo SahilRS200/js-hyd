@@ -20,6 +20,7 @@ const bootServer = function () {
   })
 }
 const bootNext = function () {
+  console.log('requesting prepare')
   app.prepare().then(() => {
     console.log('after prepare')
     const persistence = require('./persistence/index')
